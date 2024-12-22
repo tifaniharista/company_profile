@@ -149,7 +149,8 @@ nav ul li a {
   margin: 0;
 }
 
-.short-text, .full-text {
+.short-text,
+.full-text {
   margin-bottom: 10px;
 }
 
@@ -208,7 +209,7 @@ nav ul li a {
 /* Responsive design */
 @media (max-width: 768px) {
   .update-grid {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -411,7 +412,8 @@ section ul {
 }
 
 #hero-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/geothermal.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("image/geothermal.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -423,9 +425,8 @@ section ul {
   position: relative;
 }
 
-
 #hero-about h1 {
-  font-size: 3rem;  
+  font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -443,7 +444,7 @@ section ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -498,7 +499,8 @@ section ul {
 }
 
 #hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/highlight.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("image/highlight.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -510,9 +512,8 @@ section ul {
   position: relative;
 }
 
-
 #hero h1 {
-  font-size: 3rem;  
+  font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -530,12 +531,13 @@ section ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
 #hero-career {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/tambang.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("image/tambang.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -547,9 +549,8 @@ section ul {
   position: relative;
 }
 
-
 #hero-career h1 {
-  font-size: 3rem;  
+  font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -567,6 +568,17 @@ section ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
+}
+
+#daftar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#daftar-info p {
+  font-size: 1.3rem;
+  margin-top: 10px;
 }

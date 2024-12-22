@@ -1,4 +1,4 @@
-UTS PEMROGRAMAN WEBSITE (Selasa, 29 Okt 2024)
+UAS PEMROGRAMAN WEBSITE
 <br>
 <ul>
   <li>Mohamad Syahlefi Ghoni Al Maghfur  23091397117</li>

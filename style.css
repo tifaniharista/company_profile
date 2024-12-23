@@ -149,8 +149,7 @@ nav ul li a {
   margin: 0;
 }
 
-.short-text,
-.full-text {
+.short-text, .full-text {
   margin-bottom: 10px;
 }
 
@@ -209,7 +208,7 @@ nav ul li a {
 /* Responsive design */
 @media (max-width: 768px) {
   .update-grid {
-    flex-direction: column;
+      flex-direction: column;
   }
 }
 
@@ -412,8 +411,7 @@ section ul {
 }
 
 #hero-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("image/geothermal.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/geothermal.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -425,8 +423,9 @@ section ul {
   position: relative;
 }
 
+
 #hero-about h1 {
-  font-size: 3rem;
+  font-size: 3rem;  
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -444,7 +443,7 @@ section ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4); 
   z-index: -1;
 }
 
@@ -499,8 +498,7 @@ section ul {
 }
 
 #hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("image/highlight.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/highlight.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -512,8 +510,9 @@ section ul {
   position: relative;
 }
 
+
 #hero h1 {
-  font-size: 3rem;
+  font-size: 3rem;  
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -531,13 +530,12 @@ section ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4); 
   z-index: -1;
 }
 
 #hero-career {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("image/tambang.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/tambang.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -549,8 +547,9 @@ section ul {
   position: relative;
 }
 
+
 #hero-career h1 {
-  font-size: 3rem;
+  font-size: 3rem;  
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -568,17 +567,121 @@ section ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4); 
   z-index: -1;
 }
 
-#daftar {
-  display: flex;
-  align-items: center;
-  text-align: center;
+/* Tambahkan styling khusus untuk daftar.html */
+.daftar-body {
+  background-image: linear-gradient(
+      rgba(160, 151, 151, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("image/highlight.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
 }
 
-#daftar-info p {
-  font-size: 1.3rem;
-  margin-top: 10px;
+.daftar-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.daftar-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  padding: 10px 0;
+}
+
+select {
+  background-color: white;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #ffc107;
+  color: rgb(0, 0, 0);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffc107;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .daftar-container {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload input[type="file"] {
+  display: none; /* Sembunyikan input file asli */
+}
+
+.file-label {
+  background-color: #ffc107; /* Warna latar belakang tombol */
+  color: #1a1a1a; /* Warna teks tombol */
+  padding: 8px 15px; /* Ubah padding untuk memperkecil ukuran tombol */
+  border-radius: 5px; /* Sudut tombol */
+  cursor: pointer; /* Kursor pointer saat hover */
+  margin-right: 10px; /* Jarak antara tombol dan nama file */
+  font-size: 14px; /* Ubah ukuran font jika diperlukan */
+}
+
+.file-name {
+  color: #555;
+  white-space: nowrap; /* Mencegah teks membungkus ke baris berikutnya */
 }

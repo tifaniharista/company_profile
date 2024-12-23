@@ -4,108 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Pendaftaran Kerja</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-      }
-
-      body {
-        background-image: linear-gradient(
-            rgba(160, 151, 151, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("image/highlight.jpg");
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      h1 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 30px;
-      }
-
-      .form-group {
-        margin-bottom: 20px;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 5px;
-        color: #555;
-        font-weight: bold;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      input[type="tel"],
-      select,
-      textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        font-size: 16px;
-      }
-
-      input[type="file"] {
-        padding: 10px 0;
-      }
-
-      select {
-        background-color: white;
-      }
-
-      textarea {
-        height: 100px;
-        resize: vertical;
-      }
-
-      button {
-        background-color: #ffc107;
-        color: rgb(0, 0, 0);
-        padding: 12px 30px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        display: block;
-        margin: 0 auto;
-        transition: background-color 0.3s;
-      }
-
-      button:hover {
-        background-color: #ffc107;
-      }
-
-      /* Responsive Design */
-      @media screen and (max-width: 600px) {
-        .container {
-          padding: 20px;
-        }
-
-        button {
-          width: 100%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <h1>Form Pendaftaran Kerja</h1>
+  <body class="daftar-body">
+    <div class="daftar-container">
+      <h1 class="daftar-title">Form Pendaftaran Kerja</h1>
       <form action="daftar.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">
           <label for="nama">Nama Lengkap</label>
@@ -131,26 +34,33 @@
           <label for="posisi">Posisi yang Dilamar</label>
           <select id="posisi" name="posisi" required>
               <option value="">Pilih Posisi</option>
-              <option value="Software Developer">Software Developer</option>
-              <option value="UI/UX Designer">UI/UX Designer</option>
-              <option value="Marketing">Marketing</option>
-              <option value="Finance">Finance</option>
+              <option value="Mekanik">Mekanik</option>
+              <option value="Operator Alat Berat">Operator Alat Berat</option>
+              <option value="HSE Officer">HSE Officer</option>
+              <option value="Geotechnical Engineer">Geotechnical Engineer</option>
+              <option value="Construction Supervisor">Construction Supervisor</option>
           </select>
         </div>
 
         <div class="form-group">
           <label for="cv">Upload CV (PDF/DOC)</label>
-          <input
-            type="file"
-            id="cv"
-            name="cv"
-            accept=".pdf,.doc,.docx"
-            required
-          />
+          <div class="file-upload">
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              accept=".pdf,.doc,.docx"
+              required
+              onchange="updateFileName()"
+            />
+            <label for="cv" class="file-label">Choose File</label>
+            <span id="file-name" class="file-name">Tidak ada file yang dipilih</span>
+          </div>
         </div>
 
         <button type="submit">Kirim Lamaran</button>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

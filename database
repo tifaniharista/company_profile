@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `dbpekerja`.`tb_data` (
   `alamat` VARCHAR(100) NOT NULL,
   `email` VARCHAR(50) NOT NULL,
   `telepon` VARCHAR(15) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_0900_ai_ci' NOT NULL,
-  `posisi` ENUM('Software Developer', 'UI/UX Designer', 'Marketing', 'Finance') NOT NULL,
+  `posisi` ENUM('Mekanik', 'Operator Alat Berat', 'HSE Officer', 'Geotechnical Engineer', 'Construction Supervisor') NOT NULL,
   `cv` MEDIUMBLOB NOT NULL)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4

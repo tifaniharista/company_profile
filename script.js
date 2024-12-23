@@ -56,3 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {
         animateValue(stat.id, 0, stat.endValue, 1500); // Durasi 1.5 detik
     });
 });
+
+function updateFileName() {
+    const fileInput = document.getElementById('cv');
+    const fileNameDisplay = document.getElementById('file-name');
+    
+    // Memeriksa apakah ada file yang dipilih
+    if (fileInput.files.length > 0) {
+        // Mengubah teks menjadi nama file yang diunggah
+        fileNameDisplay.textContent = fileInput.files[0].name; 
+    } else {
+        // Jika tidak ada file yang dipilih, tampilkan pesan default
+        fileNameDisplay.textContent = 'Tidak ada file yang dipilih'; 
+    }
+}

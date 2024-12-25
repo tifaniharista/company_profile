@@ -685,3 +685,14 @@ button:hover {
   color: #555;
   white-space: nowrap; /* Mencegah teks membungkus ke baris berikutnya */
 }
+
+#daftar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#daftar-info p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
